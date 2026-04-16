@@ -11,35 +11,43 @@ body {
     color: #000000;
 }
 
+.wrapper {
+    width: 1920px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
 /* Шапка (Header) */
 .header {
-    border-bottom: 1px solid #f0f0f0;
-    padding: 15px 0;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 .header-container {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .logo-section {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .logo-img {
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
 .logo-text {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 32px;
+    font-size: 48px; /* Увеличено для пропорций 1920 */
     font-weight: bold;
 }
 
@@ -51,7 +59,7 @@ body {
     color: #ffffff;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 32px;
-    padding: 5px 40px;
+    padding: 10px 60px;
     cursor: pointer;
 }
 
@@ -59,18 +67,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .phone {
     font-family: "Times New Roman", Times, serif;
-    font-size: 18px;
+    font-size: 24px; /* Увеличено для пропорций 1920 */
     font-weight: bold;
 }
 
 .links {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .link-company {
@@ -93,19 +101,19 @@ body {
 
 .auth-section {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    gap: 20px;
 }
 
 .auth-item {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .auth-item a {
     font-family: "Times New Roman", Times, serif;
-    font-size: 12px;
+    font-size: 18px; /* Увеличено для пропорций 1920 */
     color: #000000;
     text-decoration: none;
 }
@@ -115,109 +123,89 @@ body {
 }
 
 .icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
 }
 
 .cart-section {
     display: flex;
     align-items: center;
-    gap: 15px;
-}
-
-.cart-icon-wrapper {
-    position: relative;
+    gap: 20px;
 }
 
 .icon-cart {
-    width: 40px;
-    height: 40px;
-}
-
-.cart-badge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: #ff0000;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 50px;
+    height: 50px;
 }
 
 .cart-total {
     font-family: "Times New Roman", Times, serif;
-    font-size: 12px;
+    font-size: 18px; /* Увеличено для пропорций 1920 */
 }
 
 /* Основной контент (Main) */
 .main-content {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 40px 20px 80px 20px;
+    padding: 40px 40px 100px 40px;
 }
 
 .page-title {
     font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    font-size: 40px;
+    font-size: 60px; /* Увеличено для пропорций 1920 */
     font-weight: bold;
     color: #F2853D;
     text-align: center;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
-    margin-bottom: 60px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    margin-bottom: 80px;
 }
 
 .section-title {
     font-family: "Times New Roman", Times, serif;
-    font-size: 24px;
+    font-size: 36px; /* Увеличено для пропорций 1920 */
     font-weight: bold;
     color: #4B7A3E;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 60px;
 }
 
 .products-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-bottom: 20px;
+    gap: 60px;
+    margin-bottom: 40px;
 }
 
 .product-card {
-    border: 6px solid #00AEEF;
-    border-radius: 60px;
-    padding: 30px 20px 0 20px;
+    border: 8px solid #00AEEF;
+    border-radius: 80px;
+    padding: 40px 30px 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
     position: relative;
+    height: 600px; /* Фиксированная высота для единообразия */
 }
 
 .product-title {
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+    font-size: 32px; /* Увеличено для пропорций 1920 */
     color: #00AEEF;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-weight: normal;
 }
 
 .product-desc {
     font-family: "Times New Roman", Times, serif;
-    font-size: 16px;
+    font-size: 24px; /* Увеличено для пропорций 1920 */
     color: #D3712B;
     text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    height: 40px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    height: 65px;
     overflow: hidden;
 }
 
@@ -228,48 +216,47 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
-    min-height: 250px;
+    margin-bottom: 40px;
 }
 
 .product-img {
     max-width: 100%;
-    max-height: 250px;
+    max-height: 300px;
     object-fit: contain;
 }
 
 .badge-new {
     position: absolute;
-    top: 20px;
-    right: -10px;
+    top: 30px;
+    right: -20px;
     background-color: #FFEC00;
     color: #000000;
     font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 8px 15px;
     transform: rotate(-5deg);
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     z-index: 10;
 }
 
 .badge-new::after {
     content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: -10px;
     right: 0;
-    border-top: 8px solid #d4c400;
-    border-right: 8px solid transparent;
+    border-top: 10px solid #d4c400;
+    border-right: 10px solid transparent;
 }
 
 .product-actions {
     display: flex;
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-right: -20px;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-right: -30px;
     margin-top: auto;
-    border-bottom-left-radius: 54px;
-    border-bottom-right-radius: 54px;
+    border-bottom-left-radius: 72px;
+    border-bottom-right-radius: 72px;
     overflow: hidden;
 }
 
@@ -277,24 +264,24 @@ body {
     background-color: #00AEEF;
     color: #ffffff;
     font-family: "Times New Roman", Times, serif;
-    font-size: 24px;
+    font-size: 32px; /* Увеличено для пропорций 1920 */
     flex: 1;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .buy-btn {
     background-color: #F2853D;
     color: #ffffff;
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+    font-size: 28px; /* Увеличено для пропорций 1920 */
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     cursor: pointer;
-    padding: 15px 0;
+    padding: 20px 0;
     transition: opacity 0.2s;
 }
 
@@ -303,18 +290,18 @@ body {
 }
 
 .icon-buy {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
 }
 
 .price-list-container {
     text-align: right;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .price-list-link {
     font-family: "Times New Roman", Times, serif;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     color: #00AEEF;
     text-decoration: none;
@@ -327,37 +314,37 @@ body {
 /* Подвал (Footer) */
 .footer {
     background-color: #8E9299;
-    padding: 40px 0;
+    padding: 60px 0;
     color: #ffffff;
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .social-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .social-title {
     font-family: "Times New Roman", Times, serif;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
 .social-icons {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .social-icon {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -372,8 +359,8 @@ body {
 }
 
 .social-icon img {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
 }
 
 .social-icon.tg { background-color: #00AEEF; }
@@ -389,13 +376,13 @@ body {
 
 .footer-phone {
     font-family: "Times New Roman", Times, serif;
-    font-size: 32px;
+    font-size: 48px;
 }
 
 .footer-credits {
     font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
+    font-size: 18px;
     text-align: right;
-    line-height: 1.2;
+    line-height: 1.3;
     opacity: 0.9;
 }
