@@ -1,0 +1,401 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Шапка (Header) */
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+.logo-text {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo-ryba { color: #D3712B; }
+.logo-ezh { color: #00AEEF; }
+
+.catalog-btn {
+    background-color: #00AEEF;
+    color: #ffffff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+.contacts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.link-company {
+    font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 18px;
+    color: #00AEEF;
+    text-decoration: none;
+}
+
+.link-news {
+    font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 18px;
+    color: #F2853D;
+    text-decoration: none;
+}
+
+.link-company:hover, .link-news:hover {
+    text-decoration: underline;
+}
+
+.auth-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.auth-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.auth-item a {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.auth-item a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.cart-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-icon-wrapper {
+    position: relative;
+}
+
+.icon-cart {
+    width: 40px;
+    height: 40px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-total {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+}
+
+/* Основной контент (Main) */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+}
+
+.page-title {
+    font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #F2853D;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4B7A3E;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    border: 6px solid #00AEEF;
+    border-radius: 60px;
+    padding: 30px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.product-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #00AEEF;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.product-desc {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #D3712B;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    height: 40px;
+    overflow: hidden;
+}
+
+.product-image-container {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    min-height: 250px;
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.badge-new {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    background-color: #FFEC00;
+    color: #000000;
+    font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transform: rotate(-5deg);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.badge-new::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    border-top: 8px solid #d4c400;
+    border-right: 8px solid transparent;
+}
+
+.product-actions {
+    display: flex;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: auto;
+    border-bottom-left-radius: 54px;
+    border-bottom-right-radius: 54px;
+    overflow: hidden;
+}
+
+.price {
+    background-color: #00AEEF;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.buy-btn {
+    background-color: #F2853D;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 15px 0;
+    transition: opacity 0.2s;
+}
+
+.buy-btn:hover {
+    opacity: 0.9;
+}
+
+.icon-buy {
+    width: 24px;
+    height: 24px;
+}
+
+.price-list-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.price-list-link {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00AEEF;
+    text-decoration: none;
+}
+
+.price-list-link:hover {
+    text-decoration: underline;
+}
+
+/* Подвал (Footer) */
+.footer {
+    background-color: #8E9299;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.social-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity 0.2s;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icon.tg { background-color: #00AEEF; }
+.social-icon.vk { background-color: #4C75A3; }
+.social-icon.star { background-color: #000000; }
+.social-icon.ok { background-color: #F2853D; }
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-phone {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 32px;
+}
+
+.footer-credits {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    text-align: right;
+    line-height: 1.2;
+    opacity: 0.9;
+}
