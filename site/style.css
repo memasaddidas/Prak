@@ -8,9 +8,9 @@ body { font-family: Arial, sans-serif; background-color: #ffffff; color: #000000
 .header { padding: 30px 0; margin-bottom: -40px; }
 .header-container { max-width: 1800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
 
-.logo-section { display: flex; align-items: center; gap: 0px;}
-.logo-img { width: 3.67cm; height: 2.49cm; }
-.logo-text { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-size: 48px; font-weight: bold; text-shadow: 3px 3px 5px rgba(0,0,0,0.4); position: relative; left: -40px; z-index: 2; }
+.logo-section { display: flex; align-items: center; gap: 8px;}
+.logo-img { width: 96px; height: 96px; object-fit: contain; }
+.logo-text { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-size: 32px; font-weight: bold; text-shadow: 1px 1px 2px rgba(0,0,0,0.4); z-index: 2; line-height: 1; }
 .logo-ryba { color: #F2853D; } 
 .logo-ezh { color: #00AEEF; }
 
