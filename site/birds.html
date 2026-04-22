@@ -9,7 +9,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header-container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="header-container" >
                 <a href="index.html" class="logo-section" style="text-decoration: none; color: inherit;">
                     <img src="../Макет сайта Пуховой/Картинки/лого.png" alt="Рыба Ёж" class="logo-img">
                     <div class="logo-text">
@@ -22,14 +22,14 @@
                     <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 40px; font-weight: bold; color: #00AEEF; max-width: 250px; text-align: center; line-height: 1.1;">Товары для птиц</h2>
                 </div>
                 
-                <div class="contacts-section" style="display: flex; flex-direction: column; align-items: center; gap: 5px; margin-top: 30px;">
+                <div class="contacts-section">
                     <div class="phone">8 (800) 555-35-35</div>
                     <div class="links">
                         <a href="#" class="link-company">О компании</a>
-                        <a href="catalog.html" class="link-news" style="color: #00AEEF;">Каталог</a>
+                        <a href="#" class="link-news" style="color: #F2853D;">Новости</a>
                         <a href="index.html" class="link-main">Главная страница</a>
                     </div>
-                </div>
+</div>
                 
                 <div class="auth-section">
                     <div class="auth-item">
@@ -49,9 +49,18 @@
         </header>
 
         <main class="main-content">
-            <div style="display: flex; margin-bottom: 40px;">
-                <a href="catalog.html" class="catalog-btn" style="padding: 10px 45px; border-radius: 10px; margin-top: 40px;">Назад</a>
+            
+            
+            
+            <div style="display: flex; margin-bottom: 5px; margin-top: 5px;">
+                <a href="catalog.html" class="btn-back-catalog">
+                    <span style="border: solid #00AEEF; border-width: 0 3px 3px 0; display: inline-block; padding: 3px; transform: rotate(135deg); -webkit-transform: rotate(135deg);"></span>
+                    Назад в каталог
+                </a>
             </div>
+
+
+    
             <div class="products-grid-4" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-bottom: 40px; max-width: 1800px; margin-left: auto; margin-right: auto;">
                 <!-- Товар 1 -->
                 <div class="product-card">
@@ -117,24 +126,30 @@
             </div>
         </main>
 
+        
+        
         <footer class="footer">
             <div class="footer-container">
+                
                 <div class="footer-content">
                     <div class="footer-phone">8 (800) 555-35-35</div>
+                    
+                    <div class="social-icons-wrapper">
+                        <div class="social-title">Мы в соцсетях:</div>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="../Макет сайта Пуховой/Кнопки/тг.png" alt="Telegram"></a>
+                            <a href="#" class="social-icon"><img src="../Макет сайта Пуховой/Кнопки/вк.png" alt="VK"></a>
+                            <a href="#" class="social-icon"><img src="../Макет сайта Пуховой/Кнопки/почта.png" alt="Email"></a>
+                            <a href="#" class="social-icon"><img src="../Макет сайта Пуховой/Кнопки/ок.png" alt="OK"></a>
+                        </div>
+                    </div>
+                    
                     <div class="footer-credits">
                         Работает на UMI.CMS<br>
                         ИП Шеремет Э.О ИНН 401109946472
                     </div>
-                    <div class="social-section" style="margin-top: 10px;">
-                        <div class="social-title">Мы в соцсетях:</div>
-                        <div class="social-icons">
-                            <a href="#" class="social-icon"><img src="../Макет сайта Пуховой/Кнопки/Телеграмм.png" alt="Telegram"></a>
-                            <a href="#" class="social-icon"><img src="../Макет сайта Пуховой/Кнопки/ВКонтакте.png" alt="VK"></a>
-                            <a href="#" class="social-icon"><img src="../Макет сайта Пуховой/Кнопки/Дзен.png" alt="Zen"></a>
-                            <a href="#" class="social-icon"><img src="../Макет сайта Пуховой/Кнопки/Одноклассники.png" alt="OK"></a>
-                        </div>
-                    </div>
                 </div>
+
             </div>
         </footer>
     </div>
