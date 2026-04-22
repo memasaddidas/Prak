@@ -227,3 +227,77 @@ body { font-family: Arial, sans-serif; background-color: #ffffff; color: #000000
     border-bottom: 8px solid transparent;
     border-right: 18px solid #F2853D;
 }
+
+/* --- КАРТОЧКИ ТОВАРОВ В КАТЕГОРИЯХ (Кошки, Собаки и т.д.) МАГАЗИН --- */
+.cat-product-card {
+    border: 5px solid #00AEEF;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    flex-shrink: 0;
+    height: 480px;
+}
+
+.cat-product-img-wrap {
+    padding: 30px 20px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cat-product-img {
+    height: 250px;
+    object-fit: contain;
+}
+
+.cat-product-text {
+    padding: 10px 20px 20px 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #F2853D;
+    text-align: center;
+    flex-grow: 1; /* Опускает низ */
+    display: flex;
+    align-items: center; /* Центрируем текст по вертикали */
+    justify-content: center;
+}
+
+.cat-product-bottom {
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+
+.cat-price {
+    background-color: #00AEEF;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-buy {
+    background-color: #F2853D;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.cat-buy-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
