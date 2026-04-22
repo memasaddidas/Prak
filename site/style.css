@@ -183,3 +183,47 @@ body { font-family: Arial, sans-serif; background-color: #ffffff; color: #000000
     max-width: 200px;
     line-height: 1.1;
 }
+
+/* Стили для кнопки назад (точь-в-точь как на макете) */
+.back-to-catalog-btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: 3px solid #F2853D;
+    border-radius: 12px;
+    padding: 2px 18px 8px 12px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 260px;
+}
+.back-to-catalog-btn:hover {
+    opacity: 0.8;
+}
+.back-to-catalog-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #00AEEF;
+    margin-bottom: 3px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.back-to-catalog-arrow {
+    width: 95%;
+    height: 4px;
+    background-color: #F2853D;
+    position: relative;
+    margin: 0 auto;
+}
+.back-to-catalog-arrow::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: -6px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 18px solid #F2853D;
+}
