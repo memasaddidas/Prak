@@ -134,159 +134,116 @@ body { font-family: Arial, sans-serif; background-color: #ffffff; color: #000000
 }
 
 /* --- СТИЛИ ДЛЯ ВНУТРЕННИХ СТРАНИЦ КАТАЛОГА (Собаки, Кошки и т.д.) --- */
+
+/* Стили для кнопки назад (точь-в-точь как на фото 2) */
 .back-btn-wrap {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.back-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    border: 3px solid #F2853D;
-    border-radius: 12px;
-    padding: 8px 30px;
-    color: #00AEEF;
-    background-color: transparent;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: none;
-}
-.back-arrow {
-    color: #F2853D;
-    font-size: 24px;
-    line-height: 0.5;
-    margin-top: 5px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
-.category-header-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-.category-header-img {
-    width: 140px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 3px solid #F2853D;
-}
-.category-header-title {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 36px;
-    font-weight: bold;
-    color: #00AEEF;
-    text-align: center;
-    max-width: 200px;
-    line-height: 1.1;
-}
-
-/* Стили для кнопки назад (точь-в-точь как на макете) */
 .back-to-catalog-btn {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
     border: 3px solid #F2853D;
-    border-radius: 12px;
-    padding: 2px 18px 8px 12px;
+    border-radius: 10px; /* ЗАКРУГЛЕННАЯ рамка */
+    padding: 5px 15px 10px 15px; 
     background-color: #ffffff;
     margin-top: 20px;
-    margin-bottom: 20px;
-    min-width: 260px;
 }
-.back-to-catalog-btn:hover {
-    opacity: 0.8;
-}
+
 .back-to-catalog-text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
     font-weight: bold;
     color: #00AEEF;
-    margin-bottom: 3px;
-    width: 100%;
+    margin-bottom: 5px;
     text-align: center;
-    letter-spacing: 1px;
 }
+
+/* Настоящая стрелочка влево, а не просто линия */
 .back-to-catalog-arrow {
-    width: 95%;
-    height: 4px;
+    width: 100%;
+    height: 6px;
     background-color: #F2853D;
     position: relative;
-    margin: 0 auto;
+    border-radius: 3px;
 }
+
 .back-to-catalog-arrow::before {
     content: "";
     position: absolute;
-    left: -4px;
+    left: -2px; /* Стрелка торчит слева */
     top: -6px;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 18px solid #F2853D;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-right: 15px solid #F2853D; /* Направление влево */
 }
 
-/* --- КАРТОЧКИ ТОВАРОВ В КАТЕГОРИЯХ (Кошки, Собаки и т.д.) МАГАЗИН --- */
+/* --- КАРТОЧКИ ТОВАРОВ В КАТЕГОРИЯХ (Кошки, Собаки и т.д.) --- */
 .cat-product-card {
-    border: 5px solid #00AEEF;
+    border: 6px solid #00AEEF;
     border-radius: 40px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     flex-shrink: 0;
-    height: 480px;
+    height: 650px; /* Увеличено, чтобы доходить до подвала */
+    padding: 20px;
 }
 
 .cat-product-img-wrap {
-    padding: 30px 20px 0 20px;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .cat-product-img {
-    height: 250px;
+    height: 350px;
     object-fit: contain;
 }
 
 .cat-product-text {
-    padding: 10px 20px 20px 20px;
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 24px;
     color: #F2853D;
     text-align: center;
-    flex-grow: 1; /* Опускает низ */
+    flex-grow: 1; /* Опускает блоки цены вниз */
     display: flex;
-    align-items: center; /* Центрируем текст по вертикали */
+    align-items: center; 
     justify-content: center;
+    padding: 0 10px;
 }
 
+/* Отдельные прямоугольники внутри карточки (не слитые с рамкой) */
 .cat-product-bottom {
     display: flex;
     height: 50px;
     width: 100%;
+    margin-top: 15px; /* Зазор между текстом и кнопками */
 }
 
 .cat-price {
     background-color: #00AEEF;
     color: #ffffff;
     font-family: "Times New Roman", Times, serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Прямоугольный угол */
 }
 
 .cat-buy {
     background-color: #F2853D;
     color: #ffffff;
     font-family: "Times New Roman", Times, serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     flex: 1;
     display: flex;
@@ -294,10 +251,104 @@ body { font-family: Arial, sans-serif; background-color: #ffffff; color: #000000
     justify-content: center;
     gap: 10px;
     cursor: pointer;
+    /* Прямоугольный угол */
 }
 
 .cat-buy-icon {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     object-fit: contain;
+}
+
+/* --- СТРАНИЦА ОДНОГО ТОВАРА (product.html) --- */
+.product-detail-flex {
+    display: flex;
+    gap: 60px;
+    padding: 0 20px 40px 20px;
+    margin-bottom: auto;
+}
+
+.product-detail-img-col {
+    flex: 0 0 auto;
+    border: 5px solid #00AEEF;
+    border-radius: 40px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: fit-content;
+    width: 400px;
+}
+
+.product-detail-img-col img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain;
+}
+
+.product-detail-info-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-detail-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #F2853D;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.product-detail-desc {
+    font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 22px;
+    color: #00AEEF;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.product-detail-buy-block {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: 4px solid #F2853D;
+    /* Не сливаем с рамкой, прямоугольно/как выберете */
+}
+
+.product-detail-price {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    padding: 15px 30px;
+}
+
+.product-detail-stock {
+    font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.product-detail-buy {
+    background-color: #F2853D;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.product-detail-buy-icon {
+    width: 35px;
+    height: 35px;
 }
